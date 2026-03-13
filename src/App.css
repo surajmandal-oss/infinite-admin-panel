@@ -1,0 +1,95 @@
+* {
+  @apply box-border;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #efeaea;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  @apply m-[0] p-[0];
+}
+.inputFields > input {
+  @apply py-[5px] px-[10px] rounded-[5px] border-none bg-[#dedede];
+}
+.inputFields > input::placeholder {
+  @apply text-[13px] font-[600];
+}
+.containerRightDetail,
+.idDetails {
+  @apply flex gap-[10px] cursor-pointer;
+}
+.spans {
+  @apply flex flex-col text-[10px] text-[#a7a4a4];
+}
+.links a {
+  @apply no-underline flex items-center gap-[10px] text-[#352f2f] p-[5px] rounded-[8px];
+}
+a.active {
+  @apply bg-[#000000] text-[#ffffff];
+}
+.contriHeading > h3 {
+  background: linear-gradient(to right, #1449bd, #ff0000, #ff0000, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+}
+.contributingInputFields button {
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+.contributingInfo {
+  @apply flex flex-col w-[23%];
+}
+.contributingInfo label {
+  @apply text-[10px] font-[600];
+}
+.contributingInfo input {
+  @apply border-[1.37px] border-solid border-[#dedede] py-[5px] px-[10px] rounded-[9px] text-[12px];
+}
+.contributingInfo input::placeholder {
+  @apply text-[12px];
+}
+.contributingInfo select {
+  @apply border-[1.37px] border-solid border-[#dedede] py-[5px] px-[10px] rounded-[9px] text-[12px];
+}
+.dataHeading h6 {
+  @apply m-[0px] text-[9px] px-[20px] text-[#5d5959] w-[120px] flex justify-between items-center;
+}
+.dataHeading > :nth-child(7) {
+  @apply flex justify-center;
+}
+.data > .user,
+.leadButton,
+.userProduct,
+.userCampaign,
+.userCall,
+.userAssigned,
+.userAction {
+  @apply w-[fit] flex justify-center items-center;
+}
+.leadButton > button {
+  @apply bg-[#000000] text-[#ffffff] border-none text-[8px] py-[2px] px-[8px] rounded-[20px];
+}
+div.ud {
+  @apply flex items-center text-[10px] font-[600];
+}
+.userIcon {
+  @apply text-[9px] mr-[3px];
+}
+div.userIcon.eyeIcon {
+  @apply bg-[rgb(241,220,241)] w-[30px] h-[30px] border-[1.37px] border-solid border-[#dedede] rounded-[10px] text-[17px] text-[rgb(185,16,134)] flex justify-center items-center;
+}
